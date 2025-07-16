@@ -50,7 +50,7 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <div className="container px-5 py-12 mx-auto">
+    <div className="container px-5 py-4 mx-auto">
       <h2 className="text-4xl mb-10 font-light tracking-widest text-gray-600 text-center">
         P R O J E C T S
       </h2>

@@ -20,10 +20,10 @@ function App() {
       <section id="home" className="h-screen">
         <Home></Home>
       </section>
-      <section id="about" className="h-screen">
+      <section id="about">
         <About></About>
       </section>
-      <section id="projects" className="h-screen">
+      <section id="projects">
         <Projects></Projects>
       </section>
       <section id="skills" className="h-screen">
