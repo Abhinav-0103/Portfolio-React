@@ -25,12 +25,13 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-row justify-center items-center min-h-screen">
-      <h2 className="text-4xl mr-[20vh] font-light tracking-widest text-gray-600 text-center">
+    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen px-4 py-8 gap-y-8 md:gap-y-0 m-2">
+      
+      <h2 className="text-3xl sm:text-4xl md:mr-[10vw] font-light tracking-widest text-gray-600 text-center md:text-left">
         S K I L L S
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-4 sm:grid-cols-4 xl:grid-cols-5 gap-6">
         {skills.map((skill, index) => (
           <div
             key={index}
@@ -39,10 +40,10 @@ const Skills = () => {
             <img
               src={skill.image}
               alt={`Skill ${index}`}
-              className="rounded-full border-2 border-gray-600 object-cover w-16 h-16 md:w-20 md:h-20 2xl:w-28 2xl:h-28 filter group-hover:grayscale transition duration-300 ease-in-out"
+              className="rounded-full border-2 border-gray-600 object-cover w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 2xl:w-28 2xl:h-28 filter group-hover:grayscale transition duration-300 ease-in-out"
             />
-            <div className="absolute opacity-0 group-hover:opacity-90 transition duration-300 ease-in-out group-hover:bg-white w-16 h-16 md:w-20 md:h-20 2xl:w-28 2xl:h-28 rounded-full flex items-center justify-center">
-              <p className="text-lg md:text-xl font-bold text-black">
+            <div className="absolute opacity-0 group-hover:opacity-90 transition duration-300 ease-in-out group-hover:bg-white w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 2xl:w-28 2xl:h-28 rounded-full flex items-center justify-center">
+              <p className="text-sm sm:text-base lg:text-lg font-bold text-black">
                 {skill.level}
               </p>
             </div>

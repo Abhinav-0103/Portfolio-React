@@ -4,24 +4,24 @@ import "./Home.css"
 
 const Home = () => {
   return (
-    <div className="w-150 h-150 rounded-full border-2 border-gray-200 bg-white mb-8 mx-auto">
+    <div className="sm:border-0 sm:w-60 sm:h-60 md:w-100 md:h-100 lg:w-150 lg:h-150 rounded-full md:border-2 lg:border-2 border-gray-200 bg-white mx-auto mt-5">
       <div className="w-full h-full flex flex-col items-center justify-center">
         <img
           src={profileImage}
           alt="Profile"
-          className="w-40 h-40 rounded-full object-cover border-4 border-gray-300"
+          className="sm:w-32 sm:h-16 md:w-40 md:h-40 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-gray-300"
         />
         <div className="mt-4 flex flex-row items-center justify-center gap-x-4">
-          <span className="text-xl font-semibold text-gray-700 tracking-widest">
-            D A T A
+          <span className="sm: md:text-base lg:text-xl font-semibold text-gray-700 tracking-widest">
+            A I / M L
           </span>
-          <span className="text-xl font-semibold text-gray-700 tracking-widest">
-            S C I E N T I S T
+          <span className="md:text-base lg:text-xl font-semibold text-gray-700 tracking-widest">
+            E N G I N E E R
           </span>
         </div>
 
         <div className="mt-6">
-          <h1 className="text-3xl font-bold text-gray-800 whitespace-nowrap typewriter-toggle">
+          <h1 className="md:text-xl lg:text-3xl font-bold text-gray-800 whitespace-nowrap typewriter-toggle">
             Hi, I am Abhinav
           </h1>
         </div>

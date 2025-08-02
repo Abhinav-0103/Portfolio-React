@@ -13,41 +13,41 @@ const projectData = [
     title: 'E D A Portfolio',
     description:
       'A curated collection of EDA projects showcasing data cleaning, visualization and insight generation skills.',
-    video: one, // Example path; update accordingly
+    video: "https://www.youtube.com/embed/EJA1s-3cZAU?si=OEWBa5OpIIybqRvd",
     github: 'https://github.com/Abhinav-0103/EDA-Portfolio',
     image: edaPortfolio,
-    link: 'https://www.kaggle.com/',
+    link: 'https://abhinav-0103-eda-portfolio.streamlit.app/',
   },
   {
     category: 'Natural Language Processing',
     title: 'W.E.N.S.A',
     description:
       'An EDA and sentiment analyzer that uncovers message patterns, user activity and emotional tone from WhatsApp chat exports.',
-    video: two,
+    video: "https://www.youtube.com/embed/y7MjYVb8cUE?si=Aa2fUwr-ObmIN7eN",
     github:
       'https://github.com/Abhinav-0103/WENSA-WhatsApp-Emotion-and-Sentiment-Analyzer-Using-LSTM-and-BI-LSTM',
     image: wensa2,
-    link: 'https://www.kaggle.com/',
+    link: 'https://wensa0103.streamlit.app/',
   },
   {
     category: 'Computer Vision',
     title: 'Image Super Resolution',
     description:
       'A deep learning project that enhances low-resolution images using ESRGAN architecture augmented with CBAM for improved detail and attention-driven restoration.',
-    video: three,
+    video: "https://www.youtube.com/embed/95QoXYpZTJY?si=bj-YMTa3Ot7G-5kj",
     github: 'https://github.com/Abhinav-0103/Super-Resolution',
     image: isr,
-    link: 'https://www.kaggle.com/',
+    link: 'https://super-resolution-0103.streamlit.app/',
   },
   {
     category: 'Web Development',
     title: 'WanderLust',
     description:
       'A dynamic full-stack web application built with MongoDB, Express, and Node.js, featuring CRUD functionality and RESTful API integration.',
-    video: one,
+    video: "https://www.youtube.com/embed/GL25No1tNRY?si=NJAJ3YQ2lFVwK9cM",
     github: 'https://github.com/Abhinav-0103/Wanderlust',
     image: wanderlust,
-    link: 'https://www.kaggle.com/',
+    link: 'https://wanderlust-9nb0.onrender.com/',
   },
 ];
 
@@ -80,18 +80,18 @@ const Projects = () => {
               </h1>
               <p className="leading-relaxed mb-3">{project.description}</p>
 
-              <div className="absolute bottom-0 left-0 w-full py-4 flex justify-center space-x-4">
+              <div className="absolute bottom-0 left-0 w-full py-4 flex justify-center space-x-3">
                 {/* Video Button */}
                 <button
                   onClick={() => setActiveVideo(project.video)}
-                  className="pr-2 rounded-full inline-flex items-center justify-center"
+                  className="group relative w-10 h-10 bg-white/80 hover:bg-white border border-gray-200 rounded-full flex items-center justify-center transition-all duration-300 hover:shadow-md backdrop-blur-sm"
                 >
                   <svg
-                    className="w-8 h-8 text-white hover:scale-110 transition-transform"
+                    className="w-4 h-4 text-gray-600 group-hover:text-gray-800 transition-colors duration-200"
                     fill="currentColor"
-                    viewBox="0 0 20 28"
+                    viewBox="0 0 20 20"
                   >
-                    <path d="M4 4v12l12-6-12-6z" />
+                    <path d="M6.3 2.841A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.269l9.344-5.89a1.5 1.5 0 0 0 0-2.538L6.3 2.84z" />
                   </svg>
                 </button>
 
@@ -100,9 +100,9 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white hover:bg-green-100 text-gray-800 font-semibold py-2 px-4 rounded inline-flex items-center shadow"
+                  className="px-6 py-2 bg-white/80 hover:bg-white border border-gray-200 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md backdrop-blur-sm"
                 >
-                  <span>Visit Project</span>
+                  Visit Project
                 </a>
 
                 {/* GitHub Button */}
@@ -110,17 +110,17 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="pr-2 rounded-full inline-flex items-center justify-center"
+                  className="group relative w-10 h-10 bg-white/80 hover:bg-white border border-gray-200 rounded-full flex items-center justify-center transition-all duration-300 hover:shadow-md backdrop-blur-sm"
                 >
                   <svg
-                    className="w-8 h-8 text-white hover:scale-110 transition-transform"
+                    className="w-4 h-4 text-gray-600 group-hover:text-gray-800 transition-colors duration-200"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
-                      d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.96.58.1.79-.25.79-.56v-1.97c-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.73-1.56-2.56-.3-5.26-1.28-5.26-5.7 0-1.26.45-2.3 1.2-3.12-.12-.3-.52-1.52.1-3.17 0 0 .98-.32 3.2 1.2a11.14 11.14 0 0 1 2.92-.4c.99 0 2 .14 2.92.4 2.22-1.52 3.2-1.2 3.2-1.2.62 1.65.22 2.87.1 3.17.75.82 1.2 1.86 1.2 3.12 0 4.43-2.7 5.4-5.27 5.7.41.35.77 1.04.77 2.1v3.12c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"
+                      d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
                     />
                   </svg>
                 </a>
@@ -133,21 +133,21 @@ const Projects = () => {
       {/* Modal */}
       {activeVideo && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-gray-900 p-4 rounded-xl relative max-w-3xl mx-4">
+          <div className="bg-gray-900 p-4 rounded-xl relative max-w-4xl mx-4">
             <button
               onClick={closeModal}
-              className="absolute top-2 right-4 text-white text-5xl font-bold hover:text-red-500 z-51"
+              className="absolute top-2 right-4 text-white text-3xl font-bold hover:text-red-500 z-51 w-8 h-8 flex items-center justify-center"
             >
               &times;
             </button>
-            <video
+            <iframe
               src={activeVideo}
-              controls
-              autoPlay
-              className="w-full rounded-md max-h-[50vh]"
+              title="YouTube video"
+              className="w-[40vh] h-[60vh] sm:w-[70vh] rounded-md sm:h-[60vh]"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             >
-              Your browser does not support the video tag.
-            </video>
+            </iframe>
           </div>
         </div>
       )}

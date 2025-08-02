@@ -4,7 +4,7 @@ import profileImage from './assets/profile_pic.jpg'; // ensure this exists and m
 const About = () => {
   return (
     <div className="w-full max-w-[180vh] max-h-[100vh] flex flex-row justify-between text-gray-800">
-      <div className="bg-white max-w-[70vh]">
+      <div className="bg-white flex items-center max-w-[70vh] w-0 sm:w-0 md:w-150 lg:w-150">
         <img
           src={profileImage}
           alt="Profile"
@@ -19,10 +19,10 @@ const About = () => {
         </h2>
 
         <div className="flex flex-col items-start justify-evenly min-h-[50vh]">
-          <h1 className="text-4xl font-semibold">
+          <h1 className="text-4xl font-semibold hidden sm:inline">
             Here is a little background
           </h1>
-          <p className="text-lg leading-relaxed max-w-xl text-left">
+          <p className="text-xl sm:text-lg leading-relaxed max-w-xl text-justify">
             I am a passionate Data Scientist with a strong background in machine learning,
             deep learning, and real-world problem-solving. I enjoy building intelligent
             systems, exploring data, and transforming insights into action. With experience

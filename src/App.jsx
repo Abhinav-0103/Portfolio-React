@@ -16,8 +16,8 @@ function App() {
     <div>
       <Navbar></Navbar>
     </div>
-    <div className="min-h-screen p-4">
-      <section id="home" className="h-screen">
+    <div className="min-h-screen">
+      <section id="home" className="">
         <Home></Home>
       </section>
       <section id="about">
