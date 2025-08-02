@@ -4,7 +4,7 @@ import "./Home.css"
 
 const Home = () => {
   return (
-    <div className="sm:border-0 sm:w-60 sm:h-60 md:w-100 md:h-100 lg:w-150 lg:h-150 rounded-full md:border-2 lg:border-2 border-gray-200 bg-white mx-auto mt-5">
+    <div className="sm:border-0 sm:w-60 sm:h-60 md:w-100 md:h-100 lg:w-150 lg:h-150 rounded-full md:border-2 lg:border-2 border-gray-200 bg-white mx-auto mt-5 mb-10">
       <div className="w-full h-full flex flex-col items-center justify-center">
         <img
           src={profileImage}
