@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
+import Blogs from './Blogs'
 import Skills from './Skills'
 import Contact from './Contact'
 import "./globals.css"
@@ -28,6 +29,9 @@ function App() {
       </section>
       <section id="skills" className="h-screen">
         <Skills></Skills>
+      </section>
+      <section id="blogs">
+        <Blogs></Blogs>
       </section>
       <section id="contact" className="h-screen">
         <Contact></Contact>
