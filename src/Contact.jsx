@@ -58,21 +58,6 @@ const Contact = () => {
               /abhinav-kumar
             </a>
           </div>
-
-          {/* Instagram */}
-          <div className="group text-center">
-            <p className="text-gray-600 text-xs sm:text-sm font-medium mb-1 tracking-wide uppercase opacity-70">
-              Instagram
-            </p>
-            <a
-              href="https://www.instagram.com/_abhinav_0103/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-800 hover:text-gray-600 transition-colors duration-200 text-base sm:text-lg font-light tracking-wide block"
-            >
-              @_abhinav_0103
-            </a>
-          </div>
         </div>
 
         <div className="mt-6 pt-8 border-t border-gray-200/60">

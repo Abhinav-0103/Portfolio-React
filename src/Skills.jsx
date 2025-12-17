@@ -1,54 +1,139 @@
 import React from 'react';
 
-const skills = [
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/eb0843b1adb22478e8f30d7fe89b377ebc6d5e85-280x280.png", level: "40%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/bfa4bb53523b50509efe860f501ce2c341b576b7-300x300.png", level: "80%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/e2517922180f2653be0e25e100a9d8ea655b55f4-920x500.png", level: "40%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/b9df410a113b7c6a81c177135f3e7a3521e98274-540x304.png", level: "75%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/ff00c08760983e0e037aaf6ab4e004f4d147276a-383x383.png", level: "85%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/94ea83d6de3e424834d9103b9fbf240a69e09677-1200x630.png", level: "30%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/e17b7d3e0e48a3cf20302f84c5c823123182ea1d-1626x1347.png", level: "30%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/a96916385b780e5a5118279cd12dca8e92a42491-860x989.png?rect=29,102,802,758", level: "70%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/4e71637150747076accb322e2181e922daf53747-800x600.png", level: "90%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/c3b8cfafe5d50fcada2ef55b4c0256e202b7e84e-225x225.png", level: "70%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/531ef67826d0970f42dfbccc06a99054f4afc557-1200x1200.png", level: "80%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/f444fc721977a788277add5b8838ff797b581ff3-259x194.png", level: "50%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/5f413b506d01f730b87036f01ddd2aabb88edf41-1200x800.png", level: "90%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/4d024d575b997b26a1db8086bd2d152f09904ed9-512x512.png", level: "90%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/f9b7b5ba8784b6f2443c1c0843476837489b668c-1200x768.png?rect=411,88,384,359", level: "70%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/92be0504b38168369d8a9f999d6f8622394dab18-800x600.webp", level: "70%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/47b62b499887dbbf2312ed25db95035201ccfb10-1920x1080.webp?rect=395,10,1111,1070", level: "80%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/3fc3825d0e46d968c0da7a482db166d09f749580-512x360.png", level: "90%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/1325538be42bf3fb23e0c4b83a9164ec479530d5-736x736.jpg", level: "80%" },
-  { image: "https://cdn.sanity.io/images/xbn4zmfs/production/f74dbc6eb29149f30e5241925000cd050ff4594f-1200x630.png", level: "40%" }
+const categories = [
+  {
+    title: "AI & MACHINE LEARNING",
+    skills: [
+      { 
+        name: "TensorFlow",
+        image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
+      },
+      { 
+        name: "PyTorch",
+        image: "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg"
+      },
+      { 
+        name: "OpenCV",
+        image: "https://upload.wikimedia.org/wikipedia/commons/5/53/OpenCV_Logo_with_text.png"
+      },
+      { 
+        name: "Pandas",
+        image: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg"
+      },
+      { 
+        name: "NumPy",
+        image: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg"
+      },
+    ]
+  },
+  {
+    title: "LANGUAGES",
+    skills: [
+      { 
+        name: "Python",
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" 
+      },
+      { 
+        name: "C++",
+        image: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+      },
+      { 
+        name: "SQL",
+        image: "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+      },
+      { 
+        name: "JavaScript",
+        image: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+      },
+    ]
+  },
+  {
+    title: "WEB & CLOUD",
+    skills: [
+      { 
+        name: "React",
+        image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+      },
+      { 
+        name: "Next.js",
+        image: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+      },
+      { 
+        name: "AWS",
+        image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+      },
+      { 
+        name: "HTML5",
+        image: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+      },
+      { 
+        name: "CSS3",
+        image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+      },
+    ]
+  },
+  {
+    title: "TOOLS & LIBRARIES",
+    skills: [
+      { 
+        name: "Git",
+        image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+      },
+      { 
+        name: "Docker",
+        image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"
+      },
+      { 
+        name: "Firebase",
+        image: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
+      },
+    ]
+  }
 ];
 
 const Skills = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen px-4 py-8 gap-y-8 md:gap-y-0 m-2">
+    <div className="flex flex-col justify-center items-center min-h-screen px-4 py-12 bg-transparent">
       
-      <h2 className="text-3xl sm:text-4xl md:mr-[10vw] font-light tracking-widest text-gray-600 text-center md:text-left">
-        S K I L L S
+      {/* Main Title */}
+      <h2 className="text-3xl sm:text-4xl font-light tracking-[0.3em] text-gray-400 mb-16 text-center uppercase">
+        Skills
       </h2>
 
-      <div className="grid grid-cols-4 sm:grid-cols-4 xl:grid-cols-5 gap-6">
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="group relative flex cursor-pointer justify-center items-center"
+      {/* Grid Container */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full">
+        
+        {categories.map((category, catIndex) => (
+          // Category Card
+          <div 
+            key={catIndex} 
+            className="bg-[#bdc6d6] border border-gray/10 rounded-2xl p-6 sm:p-8 flex flex-col gap-6 transition-colors duration-300"
           >
-            <img
-              src={skill.image}
-              alt={`Skill ${index}`}
-              className="rounded-full border-2 border-gray-600 object-cover w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 2xl:w-28 2xl:h-28 filter group-hover:grayscale transition duration-300 ease-in-out"
-            />
-            <div className="absolute opacity-0 group-hover:opacity-90 transition duration-300 ease-in-out group-hover:bg-white w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 2xl:w-28 2xl:h-28 rounded-full flex items-center justify-center">
-              <p className="text-sm sm:text-base lg:text-lg font-bold text-black">
-                {skill.level}
-              </p>
+            {/* Category Title */}
+            <h3 className="text-xl sm:text-2xl text-gray-700 font-medium tracking-wide text-left uppercase">
+              {category.title}
+            </h3>
+
+            {/* Icons Grid */}
+            <div className="flex flex-wrap gap-4 sm:gap-6">
+              {category.skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="group relative flex cursor-pointer"
+                >
+                  {/* Icon Image - Added padding (p-2) to prevent logos from touching edges */}
+                  <img
+                    src={skill.image}
+                    alt={skill.name}
+                    className="rounded-full bg-white object-contain p-2 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 filter transition duration-300 ease-in-out border-2 border-transparent"
+                  />
+                  
+                </div>
+              ))}
             </div>
           </div>
         ))}
+
       </div>
     </div>
   );
