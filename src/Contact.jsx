@@ -11,7 +11,7 @@ const Contact = () => {
           height="100%"
           className="w-full h-full"
           style={{ filter: 'grayscale(1) contrast(1.1) opacity(0.75)' }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14282.283131888076!2d80.33597949072268!3d26.501761334546643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1748952702097!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.60639185604!2d-0.4312382292249252!3d51.5286070217773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1766015929192!5m2!1sen!2suk"
         ></iframe>
       </div>
 

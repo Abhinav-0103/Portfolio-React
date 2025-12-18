@@ -82,32 +82,39 @@ const Blogs = () => {
       <div className="flex flex-wrap -m-4">
         {blogData.map((blog, index) => (
           <div key={index} className="p-4 lg:w-1/3">
-            <div
-              className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative backdrop-blur-lg"
-              style={{
-                backgroundImage: `url(${blog.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}
-            >
-              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                {blog.category}
-              </h2>
-              <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                {blog.title}
-              </h1>
-              <p className="leading-relaxed mb-3">{blog.description}</p>
+            <div className="h-full bg-gray-100 rounded-lg overflow-hidden text-center relative">
+              
+              {/* --- NEW: Background Image Layer --- */}
+              <div
+                className="absolute inset-0 opacity-70 transition-opacity duration-300"
+                style={{
+                  backgroundImage: `url(${blog.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              ></div>
 
-              <div className="absolute bottom-0 left-0 w-full py-4 flex justify-center space-x-3">
-                {/* Visit Project Button */}
-                <a
-                  href={blog.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-2 bg-white/80 hover:bg-white border border-gray-200 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md backdrop-blur-sm"
-                >
-                  Visit Blog
-                </a>
+              {/* --- Content Wrapper (Keep text opaque) --- */}
+              {/* Added relative, z-10, and original padding (px-8 pt-16 pb-24) here */}
+              <div className="relative z-10 h-full px-8 pt-16 pb-24">
+                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  {blog.category}
+                </h2>
+                <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+                  {blog.title}
+                </h1>
+                <p className="leading-relaxed mb-3">{blog.description}</p>
+
+                <div className="absolute bottom-0 left-0 w-full py-4 flex justify-center space-x-3">
+                  <a
+                    href={blog.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-2 bg-white/80 hover:bg-white border border-gray-200 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md backdrop-blur-sm"
+                  >
+                    Visit Blog
+                  </a>
+                </div>
               </div>
             </div>
           </div>
