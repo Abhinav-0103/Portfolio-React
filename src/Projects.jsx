@@ -20,7 +20,7 @@ const projectData = [
   },
   {
     category: 'Natural Language Processing',
-    title: 'WhatsApp Sentiment Analyser',
+    title: 'WhatsApp Sentiment',
     description:
       'Transforms raw WhatsApp chat logs into visual intelligence, decoding user engagement trends, communication dynamics, and emotional undercurrents via advanced sentiment analysis.',
     video: "https://www.youtube.com/embed/y7MjYVb8cUE?si=Aa2fUwr-ObmIN7eN",
@@ -89,7 +89,7 @@ const Projects = () => {
                   {/* Video Button */}
                   <button
                     onClick={() => setActiveVideo(project.video)}
-                    className="group relative w-10 h-10 bg-white/80 hover:bg-white border border-gray-200 rounded-full flex items-center justify-center transition-all duration-300 hover:shadow-md backdrop-blur-sm"
+                    className="group relative w-10 h-10 bg-white/90 hover:bg-white border border-gray-600 rounded-full flex items-center justify-center transition-all duration-300 hover:shadow-md backdrop-blur-sm"
                   >
                     <svg
                       className="w-4 h-4 text-gray-600 group-hover:text-gray-800 transition-colors duration-200"
@@ -104,7 +104,7 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-2 bg-white/80 hover:bg-white border border-gray-200 text-gray-700 hover:text-gray-900 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md backdrop-blur-sm"
+                    className="px-6 py-2 bg-white/90 hover:bg-white border border-gray-600 text-gray-600 hover:text-gray-900 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md backdrop-blur-sm"
                   >
                     Visit Project
                   </a>
@@ -114,7 +114,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative w-10 h-10 bg-white/80 hover:bg-white border border-gray-200 rounded-full flex items-center justify-center transition-all duration-300 hover:shadow-md backdrop-blur-sm"
+                    className="group relative w-10 h-10 bg-white/90 hover:bg-white border border-gray-600 rounded-full flex items-center justify-center transition-all duration-300 hover:shadow-md backdrop-blur-sm"
                   >
                     <svg
                       className="w-4 h-4 text-gray-600 group-hover:text-gray-800 transition-colors duration-200"

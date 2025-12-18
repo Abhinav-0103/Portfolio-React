@@ -20,12 +20,10 @@ const About = () => {
 
         <div className="flex flex-col items-start justify-evenly min-h-[50vh]">
           <h1 className="text-4xl font-semibold hidden sm:inline">
-            Here is a little background
+            From Algorithms to Application
           </h1>
           <p className="text-xl sm:text-lg leading-relaxed max-w-xl text-justify">
-            I am a dedicated AI/ML Engineer with a strong foundation in machine learning, deep learning, and deploying real-world intelligent systems.
-            I enjoy designing and building scalable AI solutions, working with complex data and turning insights into practical impact.
-            With hands-on experience across both research and production environments, I strive to bridge the gap between cutting-edge algorithms and real-world applications.
+            I am an AI/ML Engineer who builds production-ready intelligent systems. Bridging the gap between academic research and software engineering, I design scalable solutions that solve complex real-world problems. My focus is simple: writing clean code, building efficient models, and delivering practical impact.
           </p>
         </div>
       </div>
