@@ -1,5 +1,6 @@
 import React from 'react';
-import profileImage from './assets/profile_pic.jpg'; // ensure this exists and matches filename
+// import profileImage from './assets/profile_pic-3.jpg'; // ensure this exists and matches filename
+import profileImage from './assets/timeline.png'; // ensure this exists and matches filename
 
 const About = () => {
   return (
