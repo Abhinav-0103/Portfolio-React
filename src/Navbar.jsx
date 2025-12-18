@@ -61,15 +61,14 @@ export default function Navbar() {
 
         <div className="flex-1" />
 
-        <div className="flex items-center pr-3">
+        <div className="flex items-center space-x-4 pr-3">
+          {/* UPDATED RESUME BUTTON */}
           <a
             href="/resume.pdf"
             download="Abhinav_Resume.pdf"
-            className="flex items-center px-3 rounded-lg text-base transition-all duration-200 hover:bg-gray-100 cursor-pointer"
+            className="flex items-center px-4 py-2 rounded-lg text-base font-semibold border-2 border-gray-800 text-gray-800 transition-all duration-200 hover:bg-gray-800 hover:text-white cursor-pointer"
           >
-            <span className="text-gray-800 hover:text-gray-900 transition-colors duration-200">
-              RESUME
-            </span>
+            <span>RESUME</span>
           </a>
 
           <button
@@ -94,7 +93,6 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       <div className="md:hidden">
         <div className="flex items-center justify-between">
-          {/* Mobile menu button */}
           <button
             onClick={toggleMobileMenu}
             className="p-2 rounded-lg text-gray-600 hover:text-gray-800 hover:bg-gray-100 transition-all duration-200"
@@ -107,26 +105,25 @@ export default function Navbar() {
             )}
           </button>
 
-          {/* Mobile contact button */}
-          <button
-            onClick={handleScrollToContact}
-            className="flex items-center px-3 py-2 rounded-lg text-sm transition-all duration-200 hover:bg-gray-100"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 mr-2 text-gray-600 hover:text-gray-800 transition-colors duration-200"
-              viewBox="0 0 512 512"
-              fill="currentColor"
+          {/* Added Resume button to mobile view as well for better conversion */}
+          <div className="flex items-center space-x-2">
+            <a
+              href="/resume.pdf"
+              download="Abhinav_Resume.pdf"
+              className="px-3 py-1.5 text-sm font-semibold border-2 border-gray-800 rounded-lg text-gray-800 hover:bg-gray-800 hover:text-white transition-colors duration-200"
             >
-              <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
-            </svg>
-            <span className="text-gray-600 hover:text-gray-800 transition-colors duration-200">
-              CONTACT
-            </span>
-          </button>
+              RESUME
+            </a>
+            
+            <button
+              onClick={handleScrollToContact}
+              className="flex items-center px-2 py-2 rounded-lg text-sm transition-all duration-200 hover:bg-gray-100"
+            >
+               <span className="text-gray-600 hover:text-gray-800 font-medium">CONTACT</span>
+            </button>
+          </div>
         </div>
-
-        {/* Mobile menu dropdown */}
+        
         {isMobileMenuOpen && (
           <div className="mt-4 py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
