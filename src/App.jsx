@@ -18,13 +18,13 @@ function App() {
       <section id="home" className="">
         <Home></Home>
       </section>
-      <section id="about" className="h-140">
+      <section id="about" className="min-h-140">
         <About></About>
       </section>
       <section id="projects">
         <Projects></Projects>
       </section>
-      <section id="skills" className="h-screen">
+      <section id="skills" className="min-h-screen">
         <Skills></Skills>
       </section>
       <section id="blogs">
