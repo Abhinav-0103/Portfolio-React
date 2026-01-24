@@ -3,6 +3,7 @@ import edaPortfolio from './assets/eda-portfolio.jpeg';
 import wensa2 from './assets/wensa2.avif';
 import isr from './assets/isr.avif';
 import wanderlust from './assets/wanderlust.avif';
+import sleep_health from './assets/sleep-health.png';
 import one from "./assets/1.mp4"
 import two from "./assets/2.mp4"
 import three from "./assets/3.mp4"
@@ -28,6 +29,17 @@ const projectData = [
       'https://github.com/Abhinav-0103/WENSA-WhatsApp-Emotion-and-Sentiment-Analyzer-Using-LSTM-and-BI-LSTM',
     image: wensa2,
     link: 'https://wensa0103.streamlit.app/',
+  },
+  {
+    category: 'Machine Learning',
+    title: 'Sleep Health Predictor',
+    description:
+      'Deployed a full-stack Machine Learning application that predicts sleep disorder risks. The core of the system is a high-performance FastAPI backend hosted on Google Cloud Platform (GCP), serving real-time predictions.',
+    video: "https://www.youtube.com/embed/y7MjYVb8cUE?si=Aa2fUwr-ObmIN7eN",
+    github:
+      'https://github.com/Abhinav-0103/sleep-health-project',
+    image: sleep_health,
+    link: 'https://sleep-health-project.vercel.app/',
   },
   {
     category: 'Web Development',
