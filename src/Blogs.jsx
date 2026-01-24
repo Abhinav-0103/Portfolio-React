@@ -8,6 +8,9 @@ import article4 from './assets/blogs/article4.jpeg'
 import article5 from './assets/blogs/article5.jpeg'
 import article6 from './assets/blogs/article6.jpeg'
 import article7 from './assets/blogs/article7.png'
+import article8 from './assets/blogs/article8.png'
+import article9 from './assets/blogs/article9.png'
+import article10 from './assets/blogs/article10.png'
 
 
 const blogData = [
@@ -67,6 +70,27 @@ const blogData = [
     image: article7,
     link: 'https://medium.com/@abhinava808/github-basics-everyone-should-know-e679ba465d2d',
   },
+  {
+    category: "Machine Learning",
+    title: "Linear Regression from Scratch",
+    description: "Build Linear Regression model from scratch using Pytorch",
+    image: article8,
+    link: "https://medium.com/@abhinava808/a-beginners-guide-to-pytorch-building-linear-regression-from-the-ground-up-7f864d70fd94"
+  },
+  {
+    category: "Machine Learning",
+    title: "Neural Networks from Scratch",
+    description: "Build a Neural Network from scratch using Pytorch",
+    image: article9,
+    link: "https://medium.com/@abhinava808/pytorch-for-beginners-how-i-built-a-neural-network-in-under-50-lines-of-code-0748922ae877"
+  },
+  {
+    category: "Deep Learning",
+    title: "Self-Attention from Scratch",
+    description: "Implement 'Attention is all you need' from scratch using Pytorch",
+    image: article10,
+    link: "https://medium.com/@abhinava808/queries-keys-and-values-an-intuitive-guide-to-self-attention-b79e21ae8ecd"
+  },
 ];
 
 const Blogs = () => {
@@ -80,7 +104,7 @@ const Blogs = () => {
         B L O G S
       </h2>
       <div className="flex flex-wrap -m-4">
-        {blogData.map((blog, index) => (
+        {blogData.reverse().map((blog, index) => (
           <div key={index} className="p-4 lg:w-1/3">
             <div className="h-full bg-gray-100 rounded-lg overflow-hidden text-center relative">
               <div
