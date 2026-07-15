@@ -17,7 +17,7 @@ const projectData = [
     video: "https://www.youtube.com/embed/95QoXYpZTJY?si=bj-YMTa3Ot7G-5kj",
     github: 'https://github.com/Abhinav-0103/Super-Resolution',
     image: isr,
-    link: 'https://super-resolution-0103.streamlit.app/',
+    // link: 'https://super-resolution-0103.streamlit.app/',
   },
   {
     category: 'Natural Language Processing',
@@ -28,7 +28,7 @@ const projectData = [
     github:
       'https://github.com/Abhinav-0103/WENSA-WhatsApp-Emotion-and-Sentiment-Analyzer-Using-LSTM-and-BI-LSTM',
     image: wensa2,
-    link: 'https://wensa0103.streamlit.app/',
+    // link: 'https://wensa0103.streamlit.app/',
   },
   {
     category: 'Machine Learning',
@@ -49,7 +49,7 @@ const projectData = [
     video: "https://www.youtube.com/embed/GL25No1tNRY?si=NJAJ3YQ2lFVwK9cM",
     github: 'https://github.com/Abhinav-0103/Wanderlust',
     image: wanderlust,
-    link: 'https://wanderlust-9nb0.onrender.com/',
+    // link: 'https://wanderlust-9nb0.onrender.com/',
   },
   {
     category: 'Machine Learning',
@@ -59,7 +59,7 @@ const projectData = [
     video: "https://www.youtube.com/embed/EJA1s-3cZAU?si=OEWBa5OpIIybqRvd",
     github: 'https://github.com/Abhinav-0103/EDA-Portfolio',
     image: edaPortfolio,
-    link: 'https://abhinav-0103-eda-portfolio.streamlit.app/',
+    // link: 'https://abhinav-0103-eda-portfolio.streamlit.app/',
   }
 ];
 
@@ -112,14 +112,17 @@ const Projects = () => {
                     </svg>
                   </button>
 
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-2 bg-white/90 hover:bg-white border border-gray-600 text-gray-600 hover:text-gray-900 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md backdrop-blur-sm"
-                  >
-                    Visit Project
-                  </a>
+                  {/* Visit Project Button - Conditionally Rendered */}
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-2 bg-white/90 hover:bg-white border border-gray-600 text-gray-600 hover:text-gray-900 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md backdrop-blur-sm"
+                    >
+                      Visit Project
+                    </a>
+                  )}
 
                   {/* GitHub Button */}
                   <a

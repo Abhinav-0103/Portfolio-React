@@ -12,7 +12,6 @@ import article8 from './assets/blogs/article8.png'
 import article9 from './assets/blogs/article9.png'
 import article10 from './assets/blogs/article10.png'
 
-
 const blogData = [
   {
     category: 'Data Science',
@@ -95,8 +94,13 @@ const blogData = [
 
 const Blogs = () => {
   const [activeVideo, setActiveVideo] = useState(null);
+  const [showAll, setShowAll] = useState(false); // NEW: State to toggle visible blogs
 
   const closeModal = () => setActiveVideo(null);
+
+  // Safely reverse the array without mutating the original, then determine how many to show
+  const reversedBlogs = [...blogData].reverse();
+  const displayedBlogs = showAll ? reversedBlogs : reversedBlogs.slice(0, 6);
 
   return (
     <div className="container px-5 py-4 mx-auto">
@@ -104,7 +108,7 @@ const Blogs = () => {
         B L O G S
       </h2>
       <div className="flex flex-wrap -m-4">
-        {blogData.reverse().map((blog, index) => (
+        {displayedBlogs.map((blog, index) => (
           <div key={index} className="p-4 lg:w-1/3">
             <div className="h-full bg-gray-100 rounded-lg overflow-hidden text-center relative">
               <div
@@ -139,6 +143,18 @@ const Blogs = () => {
           </div>
         ))}
       </div>
+
+      {/* NEW: Show More / Show Less Button */}
+      {reversedBlogs.length > 6 && (
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-8 py-3 bg-white hover:bg-gray-50 border border-gray-600 text-gray-600 hover:text-gray-900 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md"
+          >
+            {showAll ? 'Show Less' : 'Show More'}
+          </button>
+        </div>
+      )}
     </div>
   );
 };
